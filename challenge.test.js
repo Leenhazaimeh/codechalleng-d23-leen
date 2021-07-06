@@ -11,8 +11,11 @@ Hint: You can use the array function reverse
 
 const reverseString = (str) => {
     // Solution code here...
+    
+        return str.split("").reverse().join("");
+    }
+    reverseString("Hello");//"olleH"
 
-};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -31,7 +34,12 @@ Output: ['a','b','c','d','e','f']
 
 const addInTheMiddle = (arr, val) => {
     // Solution code here...
-};
+    const weekdays = ['monday', 'tuesday', 'thursday', 'friday']
+    const deletedArray = weekdays.splice(2, 0, 'wednesday');
+    
+    console.log(weekdays);
+    console.log(deletedArray);
+}
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
